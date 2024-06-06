@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="container">
+      <h1>Password Generator</h1>
+      <div class="input-box">
+        <input type="text" class="pwd-box" disabled />
+        <span class="material-icons" id="copy-icon" title="Copy to clipboard"
+          >content_copy</span
+        >
+      </div>
+
+      <input type="range" min="5" max="30" value="8" class="slider" />
+
+      <div class="pwd-len">
+        <p>Password Length:</p>
+        <span class="slider-value"></span>
+      </div>
+
+      <div class="pwd-check">
+        <label for="lowercase">Include Lowercase letters (a to z)</label>
+        <input type="checkbox" name="lowercase" id="lowercase" />
+      </div>
+      <div class="pwd-check">
+        <label for="uppercase">Include Uppercase letters (A to Z)</label>
+        <input type="checkbox" name="uppercase" id="uppercase" />
+      </div>
+      <div class="pwd-check">
+        <label for="numbers">Include Numbers (0 to 9)</label>
+        <input type="checkbox" name="numbers" id="numbers" />
+      </div>
+      <div class="pwd-check">
+        <label for="symbols">Include Symbols</label>
+        <input type="checkbox" name="symbols" id="symbols" />
+      </div>
+
+      <button type="button" class="pwd-gen-btn">Generate Password</button>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
