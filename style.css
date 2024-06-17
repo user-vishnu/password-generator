@@ -24,7 +24,7 @@
   }
 
   .container {
-    max-width: 400px;
+    max-width: 360px;
     border: 3px solid rgb(80, 87, 130);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 0.7rem;
@@ -46,20 +46,20 @@
     border-radius: 0.7rem;
   }
 
-  .input-box span {
-    padding: 0 0.6rem;
-    cursor: pointer;
-  }
-
   .pwd-box {
-    width: 20rem;
-    padding: 1rem 1.5rem;
+    width: 90%;
+    padding: 1rem;
     border: none;
     border-radius: 0.7rem;
     outline: none;
     text-align: right;
     font-size: 1.3rem;
     background-color: white;
+  }
+
+ .input-box span {
+    padding: 0 0.6rem;
+    cursor: pointer;
   }
 
   .slider {
