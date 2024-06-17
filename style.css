@@ -1,92 +1,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "poppins";
-}
+@media screen and (min-width: 520px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+  }
 
-body {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(34, 193, 195);
-  background: linear-gradient(
-    115deg,
-    rgba(34, 193, 195, 1) 0%,
-    rgba(253, 187, 45, 1) 100%
-  );
-}
+  body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(
+      115deg,
+      rgba(34, 193, 195, 1) 0%,
+      rgba(253, 187, 45, 1) 100%
+    );
+  }
 
-.container {
-  /* border: 1px solid rgb(130, 80, 80); */
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 0.7rem;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
+  .container {
+    border: 3px solid rgb(80, 87, 130);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.7rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+  }
 
-.input-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: white;
-  border-radius: 0.7rem;
-}
+  .input-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.7rem;
+  }
 
-.input-box span {
-  padding: 0 0.6rem;
-  cursor: pointer;
-}
+  .input-box span {
+    padding: 0 0.6rem;
+    cursor: pointer;
+  }
 
-.pwd-box {
-  width: 25rem;
-  padding: 1rem 1.5rem;
-  border: none;
-  border-radius: 0.7rem;
-  outline: none;
-  text-align: right;
-  font-size: 1.3rem;
-  background-color: white;
-}
+  .pwd-box {
+    width: 25rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    border-radius: 0.7rem;
+    outline: none;
+    text-align: right;
+    font-size: 1.3rem;
+    background-color: white;
+  }
 
-.slider {
-  width: 100%;
-}
+  .slider {
+    width: 100%;
+  }
 
-.pwd-len,
-.pwd-check {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+  .pwd-len,
+  .pwd-check {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-input[type="checkbox"] {
-  width: 1rem;
-  height: 1rem;
-}
+  input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+  }
 
-.pwd-gen-btn {
-  border: none;
-  padding: 0.8rem 1.7rem;
-  cursor: pointer;
-  color: white;
-  background-color: #3e33ff;
-  border-radius: 0.7rem;
-  font-size: 1rem;
-  transition: 300ms;
-}
+  .pwd-gen-btn {
+    border: none;
+    padding: 0.8rem 1.7rem;
+    cursor: pointer;
+    color: white;
+    background-color: #3e33ff;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    transition: 300ms;
+  }
 
-.pwd-gen-btn:hover {
-  background-color: #7603ff;
+  .pwd-gen-btn:hover {
+    background-color: #7603ff;
+  }
 }
