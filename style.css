@@ -76,8 +76,8 @@
   }
 
   input[type="checkbox"] {
-    width: 1rem;
-    height: 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
   }
 
   .pwd-gen-btn {
