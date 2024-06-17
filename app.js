@@ -12,6 +12,10 @@ let copyIcon = document.querySelector("#copy-icon");
 sliderValue.innerHTML = slider.value;
 slider.addEventListener("input", () => {
   sliderValue.innerHTML = slider.value;
+  lowerCase.checked = false;
+  upperCase.checked = false;
+  numbers.checked = false;
+  symbols.checked = false;
 });
 
 pwdGenBtn.addEventListener("click", () => {
