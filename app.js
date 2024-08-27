@@ -12,6 +12,7 @@ let copyIcon = document.querySelector("#copy-icon");
 sliderValue.innerHTML = slider.value;
 slider.addEventListener("input", () => {
   sliderValue.innerHTML = slider.value;
+  pwdBox.value = "";  // Upon sliding, the filed showing password is emptied
   lowerCase.checked = false;
   upperCase.checked = false;
   numbers.checked = false;
@@ -25,7 +26,7 @@ pwdGenBtn.addEventListener("click", () => {
     !numbers.checked &&
     !symbols.checked
   ) {
-    alert("Please select at least one checbox to generate a password!!");
+    alert("Please select at least one checkbox to generate a password!!");
   } else {
     pwdBox.value = generatePassword();
   }
